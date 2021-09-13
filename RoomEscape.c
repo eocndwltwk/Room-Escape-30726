@@ -1,3 +1,9 @@
+/*
+ê°œë°œì : ì‹ ê°€í¬, ìµœì§€ì€, í•œì„¸í¬
+ê°œë°œì¼ : 2021.09.08
+ë¬¸ì˜ : hshgml@naver.com
+*/
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<windows.h>
@@ -43,9 +49,9 @@ int main() {
 	start(); 
 	int exit=1;
 	while(exit) {
-		printf("1) ¿ÀµÎ¸·\n");
-		printf("2) È­Àå½Ç\n");
-		printf("ÀÌµ¿ÇÒ Àå¼Ò¸¦ ¼±ÅÃÇØ ÁÖ¼¼¿ä: ");
+		printf("1) ì˜¤ë‘ë§‰\n");
+		printf("2) í™”ì¥ì‹¤\n");
+		printf("ì´ë™í•  ì¥ì†Œë¥¼ ì„ íƒí•´ ì£¼ì„¸ìš”: ");
 		scanf("%d", &place);
 		printf("\n");
 		
@@ -57,7 +63,7 @@ int main() {
 				bathroom();
 				break;
 			default:
-				printf("´Ù½Ã ÀÔ·ÂÇØ ÁÖ¼¼¿ä.\n\n");
+				printf("ë‹¤ì‹œ ì…ë ¥í•´ ì£¼ì„¸ìš”.\n\n");
 				break;
 		}
 	}
@@ -65,19 +71,19 @@ int main() {
 
 void start() {
 	system("cls");
-	printf("À¸À¸.. ¸Ó¸®¾ß..\n");
+	printf("ìœ¼ìœ¼.. ë¨¸ë¦¬ì•¼..\n");
 	WaitForSeconds(1.5f);
-	printf("¿©±ä ¾îµğÁö..?\n");
+	printf("ì—¬ê¸´ ì–´ë””ì§€..?\n");
 	WaitForSeconds(1.5f);
-	printf("¿ÀµÎ¸·ÀÎ°¡?\n");
+	printf("ì˜¤ë‘ë§‰ì¸ê°€?\n");
 	WaitForSeconds(1.5f);
-	printf("ÀÏ´Ü ³ª°¡ÀÚ..\n\n");
+	printf("ì¼ë‹¨ ë‚˜ê°€ì..\n\n");
 	WaitForSeconds(2.0f);
-	printf("(´úÄÈ´úÄÈ)\n");
+	printf("(ëœì»¹ëœì»¹)\n");
 	WaitForSeconds(1.5f);
-	printf("¹¹¾ß ¹®ÀÌ ¾È ¿­¸®Àİ¾Æ?!\n");
+	printf("ë­ì•¼ ë¬¸ì´ ì•ˆ ì—´ë¦¬ì–ì•„?!\n");
 	WaitForSeconds(1.5f);
-	printf("¹®À» ¿­ ¼ö ÀÖ´Â °É Ã£¾Æ¾ß°Ú¾î.\n\n");
+	printf("ë¬¸ì„ ì—´ ìˆ˜ ìˆëŠ” ê±¸ ì°¾ì•„ì•¼ê² ì–´.\n\n");
 	WaitForSeconds(1.5f);
 	system("pause");
 	printf("\n");
@@ -86,9 +92,9 @@ void start() {
 void place() {
 	int place_choice;
 
-	printf("1) ¿ÀµÎ¸·\n");
-	printf("2) È­Àå½Ç\n");
-	printf("ÀÌµ¿ÇÒ Àå¼Ò¸¦ ¼±ÅÃÇØ ÁÖ¼¼¿ä: ");
+	printf("1) ì˜¤ë‘ë§‰\n");
+	printf("2) í™”ì¥ì‹¤\n");
+	printf("ì´ë™í•  ì¥ì†Œë¥¼ ì„ íƒí•´ ì£¼ì„¸ìš”: ");
 	scanf("%d", &place_choice);
 	printf("\n");
 
@@ -100,7 +106,7 @@ void place() {
 			bathroom();
 			break;
 		default:
-			printf("´Ù½Ã ÀÔ·ÂÇØ ÁÖ¼¼¿ä.\n\n"); 
+			printf("ë‹¤ì‹œ ì…ë ¥í•´ ì£¼ì„¸ìš”.\n\n"); 
 			system("pause");
 	}
 }
@@ -109,21 +115,21 @@ void house() {
 	int house_choice;
 	
 	system("cls");
-	printf("[ ¿ÀµÎ¸· ]\n\n");
-	printf("1) ½ÌÅ©´ë\n");
-	printf("2) Ä§´ë\n");
-	printf("3) ¿ÊÀå\n");
-	printf("4) Ã¥»ó\n");
-	printf("5) ÀÎÇü\n");
-	printf("6) ÃâÀÔ¹®\n"); 
-	printf("Á¶»çÇÒ ¹°°ÇÀ» ¼±ÅÃÇØ ÁÖ¼¼¿ä: ");
+	printf("[ ì˜¤ë‘ë§‰ ]\n\n");
+	printf("1) ì‹±í¬ëŒ€\n");
+	printf("2) ì¹¨ëŒ€\n");
+	printf("3) ì˜·ì¥\n");
+	printf("4) ì±…ìƒ\n");
+	printf("5) ì¸í˜•\n");
+	printf("6) ì¶œì…ë¬¸\n"); 
+	printf("ì¡°ì‚¬í•  ë¬¼ê±´ì„ ì„ íƒí•´ ì£¼ì„¸ìš”: ");
 	scanf("%d", &house_choice);
 	printf("\n");
 	
 	switch(house_choice) {
 		case 1:
 			if(Find_BathroomKey) {
-				printf("´õ ÀÌ»ó ³¿»õ°¡ ³ªÁö ¾Ê´Â´Ù.\n\n");
+				printf("ë” ì´ìƒ ëƒ„ìƒˆê°€ ë‚˜ì§€ ì•ŠëŠ”ë‹¤.\n\n");
 				system("pause");
 			}
 			else {
@@ -146,7 +152,7 @@ void house() {
 			door();
 			break; 
 		default:
-			printf("´Ù½Ã ÀÔ·ÂÇØ ÁÖ¼¼¿ä.\n\n");
+			printf("ë‹¤ì‹œ ì…ë ¥í•´ ì£¼ì„¸ìš”.\n\n");
 			system("pause");
 	}
 }
@@ -155,28 +161,28 @@ void sink() {
 	int sink_choice, YvsN;
 	
 	system("cls");
-	printf("[ ¿ÀµÎ¸· ] - [ ½ÌÅ©´ë ]\n\n");
-	printf("¹è¼ö±¸¿¡ À½½Ä¹°ÀÌ ½×¿© ÀÖ´Ù.\n\n");
+	printf("[ ì˜¤ë‘ë§‰ ] - [ ì‹±í¬ëŒ€ ]\n\n");
+	printf("ë°°ìˆ˜êµ¬ì— ìŒì‹ë¬¼ì´ ìŒ“ì—¬ ìˆë‹¤.\n\n");
 	WaitForSeconds(1.5f);
-	printf("1) ¹°À» Æ°´Ù.\n");
-	printf("0) ´Ù¸¥ °ÍÀ» Á¶»çÇÑ´Ù.\n");
-	printf("ÀÛ¾÷ÇÒ °ÍÀ» ¼±ÅÃÇØ ÁÖ¼¼¿ä: ");
+	printf("1) ë¬¼ì„ íŠ¼ë‹¤.\n");
+	printf("0) ë‹¤ë¥¸ ê²ƒì„ ì¡°ì‚¬í•œë‹¤.\n");
+	printf("ì‘ì—…í•  ê²ƒì„ ì„ íƒí•´ ì£¼ì„¸ìš”: ");
 	scanf("%d", &sink_choice);
 	printf("\n");
 	
 	switch(sink_choice) {
 		case 1:
-			printf("¹°ÀÌ ³»·Á°¡Áö ¾Ê´Â´Ù.\n");
+			printf("ë¬¼ì´ ë‚´ë ¤ê°€ì§€ ì•ŠëŠ”ë‹¤.\n");
 			WaitForSeconds(1.5f);
-			printf("Á» Ä¡¿ï±î? ³¿»õµµ ½ÉÇÑµ¥..\n\n");
+			printf("ì¢€ ì¹˜ìš¸ê¹Œ? ëƒ„ìƒˆë„ ì‹¬í•œë°..\n\n");
 			WaitForSeconds(1.5f);
-			printf("1) Ä¡¿î´Ù.\n");
-			printf("2) ¾È Ä¡¿î´Ù.\n");
+			printf("1) ì¹˜ìš´ë‹¤.\n");
+			printf("2) ì•ˆ ì¹˜ìš´ë‹¤.\n");
 			scanf("%d", &YvsN);
 			printf("\n");
 			
 			if(YvsN == 1) {
-				printf("[ È­Àå½Ç ¿­¼è È¹µæ ]\n\n");
+				printf("[ í™”ì¥ì‹¤ ì—´ì‡  íšë“ ]\n\n");
 				Find_BathroomKey = T;
 				return;
 			}  
@@ -187,7 +193,7 @@ void sink() {
 		case 0: 
 			return;
 		default:
-			printf("´Ù½Ã ÀÔ·ÂÇØ ÁÖ¼¼¿ä.\n\n");
+			printf("ë‹¤ì‹œ ì…ë ¥í•´ ì£¼ì„¸ìš”.\n\n");
 			system("pause");
 	}
 }
@@ -196,33 +202,33 @@ void bed() {
 	int bed_choice;
 	
 	system("cls");
-	printf("[ ¿ÀµÎ¸· ] - [ Ä§´ë ]\n\n");
-	printf("Ä§´ë°¡ Æø½ÅÇÑ °É º¸´Ï ÁÁÀº ¸ÅÆ®¸®½º °°´Ù.\n\n");
+	printf("[ ì˜¤ë‘ë§‰ ] - [ ì¹¨ëŒ€ ]\n\n");
+	printf("ì¹¨ëŒ€ê°€ í­ì‹ í•œ ê±¸ ë³´ë‹ˆ ì¢‹ì€ ë§¤íŠ¸ë¦¬ìŠ¤ ê°™ë‹¤.\n\n");
 	WaitForSeconds(1.5f);
-	printf("1) ¸ÅÆ®¸®½º¸¦ µé¾îº»´Ù.\n");
-	printf("2) ¹è°ÔÀÇ ÁöÆÛ¸¦ ¿­¾îº»´Ù.\n");
-	printf("3) Ä§´ë ¹ØÀ» º»´Ù.\n");
-	printf("0) ´Ù¸¥ °ÍÀ» Á¶»çÇÑ´Ù.\n");
-	printf("ÀÛ¾÷ÇÒ °ÍÀ» ¼±ÅÃÇØ ÁÖ¼¼¿ä: ");
+	printf("1) ë§¤íŠ¸ë¦¬ìŠ¤ë¥¼ ë“¤ì–´ë³¸ë‹¤.\n");
+	printf("2) ë°°ê²Œì˜ ì§€í¼ë¥¼ ì—´ì–´ë³¸ë‹¤.\n");
+	printf("3) ì¹¨ëŒ€ ë°‘ì„ ë³¸ë‹¤.\n");
+	printf("0) ë‹¤ë¥¸ ê²ƒì„ ì¡°ì‚¬í•œë‹¤.\n");
+	printf("ì‘ì—…í•  ê²ƒì„ ì„ íƒí•´ ì£¼ì„¸ìš”: ");
 	scanf("%d", &bed_choice);
 	printf("\n");
 	
 	switch(bed_choice) {
 		case 1:
-			printf("[ Âõ¾îÁø ¸Ş¸ğÁö ¹ß°ß ]\n");
+			printf("[ ì°¢ì–´ì§„ ë©”ëª¨ì§€ ë°œê²¬ ]\n");
 			WaitForSeconds(1.5f);
-			printf("¸Ş¸ğÁö¿¡ '2020.10.25'¶ó°í ÀûÇôÀÖ´Ù.\n\n");
+			printf("ë©”ëª¨ì§€ì— '2020.10.25'ë¼ê³  ì í˜€ìˆë‹¤.\n\n");
 			break;
 		case 2:
-			printf("[ ÃâÀÔ¹® ºñ¹Ğ¹øÈ£ È¹µæ (0) ]\n\n");
+			printf("[ ì¶œì…ë¬¸ ë¹„ë°€ë²ˆí˜¸ íšë“ (0) ]\n\n");
 			break;
 		case 3:
-			printf("¸ÕÁö°¡ ³Ê¹« ¸¹´Ù. Ã»¼Ò¸¦ ¾ğÁ¦ ÇÑ °Å¾ß..\n\n");
+			printf("ë¨¼ì§€ê°€ ë„ˆë¬´ ë§ë‹¤. ì²­ì†Œë¥¼ ì–¸ì œ í•œ ê±°ì•¼..\n\n");
 			break;
 		case 0:
 			return;
 		default:
-			printf("´Ù½Ã ÀÔ·ÂÇØ ÁÖ¼¼¿ä.\n\n");
+			printf("ë‹¤ì‹œ ì…ë ¥í•´ ì£¼ì„¸ìš”.\n\n");
 			system("pause");
 	}
 }
@@ -231,12 +237,12 @@ void closet() {
 	int closet_choice;
 	
 	system("cls");
-	printf("[ ¿ÀµÎ¸· ] - [ ¿ÊÀå ]\n\n");
-	printf("¿ÊÀÌ °¡µæ ½×¿©ÀÖ´Ù.\n\n");
+	printf("[ ì˜¤ë‘ë§‰ ] - [ ì˜·ì¥ ]\n\n");
+	printf("ì˜·ì´ ê°€ë“ ìŒ“ì—¬ìˆë‹¤.\n\n");
 	WaitForSeconds(1.5f);
-	printf("1) ¿ÊÀ» Á¤¸®ÇÑ´Ù.\n");
-	printf("0) ´Ù¸¥ °ÍÀ» Á¶»çÇÑ´Ù.\n");
-	printf("ÀÛ¾÷ÇÒ °ÍÀ» ¼±ÅÃÇØ ÁÖ¼¼¿ä: ");
+	printf("1) ì˜·ì„ ì •ë¦¬í•œë‹¤.\n");
+	printf("0) ë‹¤ë¥¸ ê²ƒì„ ì¡°ì‚¬í•œë‹¤.\n");
+	printf("ì‘ì—…í•  ê²ƒì„ ì„ íƒí•´ ì£¼ì„¸ìš”: ");
 	scanf("%d", &closet_choice);
 	printf("\n");
 	
@@ -244,18 +250,18 @@ void closet() {
 		case 1:
 		closet_count += 1;
 			if(closet_count >= 5) {
-				printf("ÀÌÁ¦¾ß Á» »ç¶÷ »ç´Â °÷ °°´Ù.\n");
+				printf("ì´ì œì•¼ ì¢€ ì‚¬ëŒ ì‚¬ëŠ” ê³³ ê°™ë‹¤.\n");
 				WaitForSeconds(1.5f);
-				printf("[ ÃâÀÔ¹® ºñ¹Ğ¹øÈ£ È¹µæ (1) ]\n\n");
+				printf("[ ì¶œì…ë¬¸ ë¹„ë°€ë²ˆí˜¸ íšë“ (1) ]\n\n");
 			}
 			else {
-				printf("¾ÆÁ÷µµ ÁöÀúºĞÇÏ´Ù.\n\n");
+				printf("ì•„ì§ë„ ì§€ì €ë¶„í•˜ë‹¤.\n\n");
 			}
 			break;
 		case 0:
 			return;
 		default:
-			printf("´Ù½Ã ÀÔ·ÂÇØ ÁÖ¼¼¿ä.\n\n");
+			printf("ë‹¤ì‹œ ì…ë ¥í•´ ì£¼ì„¸ìš”.\n\n");
 			system("pause");
 	}
 }
@@ -264,22 +270,22 @@ void desk() {
 	int desk_choice, PW_choice;
 
 	system("cls");
-	printf("[ ¿ÀµÎ¸· ] - [ Ã¥»ó ]\n\n");
-	printf("Ã¥»ó À§¿¡ ÄÄÇ»ÅÍ¿Í »çÁøÀÌ ÀÖ´Ù.\n\n");
+	printf("[ ì˜¤ë‘ë§‰ ] - [ ì±…ìƒ ]\n\n");
+	printf("ì±…ìƒ ìœ„ì— ì»´í“¨í„°ì™€ ì‚¬ì§„ì´ ìˆë‹¤.\n\n");
 	WaitForSeconds(1.5f);
-	printf("1) ÄÄÇ»ÅÍ¸¦ ÄÒ´Ù.\n");
-	printf("2) »çÁøÀ» º»´Ù.\n");
-	printf("0) ´Ù¸¥ °ÍÀ» Á¶»çÇÑ´Ù.\n");
-	printf("ÀÛ¾÷ÇÒ °ÍÀ» ¼±ÅÃÇØ ÁÖ¼¼¿ä: ");
+	printf("1) ì»´í“¨í„°ë¥¼ ì¼ ë‹¤.\n");
+	printf("2) ì‚¬ì§„ì„ ë³¸ë‹¤.\n");
+	printf("0) ë‹¤ë¥¸ ê²ƒì„ ì¡°ì‚¬í•œë‹¤.\n");
+	printf("ì‘ì—…í•  ê²ƒì„ ì„ íƒí•´ ì£¼ì„¸ìš”: ");
 	scanf("%d", &desk_choice); 
 	printf("\n");
 	
 	switch(desk_choice) {
 		case 1:
-			printf("ÆĞ½º¿öµå°¡ °É·ÁÀÖ°í, È­¸é¿¡ 'ÃÊ¼º'ÀÌ¶ó ÀûÇôÀÖ´Ù.\n\n");
+			printf("íŒ¨ìŠ¤ì›Œë“œê°€ ê±¸ë ¤ìˆê³ , í™”ë©´ì— 'ì´ˆì„±'ì´ë¼ ì í˜€ìˆë‹¤.\n\n");
 			WaitForSeconds(1.5f);
-			printf("1) ÆĞ½º¿öµå¸¦ ÀÔ·ÂÇÑ´Ù.\n");
-			printf("2) ÆĞ½º¿öµå¸¦ ÀÔ·ÂÇÏÁö ¾Ê´Â´Ù.\n");
+			printf("1) íŒ¨ìŠ¤ì›Œë“œë¥¼ ì…ë ¥í•œë‹¤.\n");
+			printf("2) íŒ¨ìŠ¤ì›Œë“œë¥¼ ì…ë ¥í•˜ì§€ ì•ŠëŠ”ë‹¤.\n");
 			scanf("%d", &PW_choice);
 			printf("\n");
 			
@@ -289,14 +295,14 @@ void desk() {
 				return;
 			break;
 		case 2:
-			printf("»çÁø µÚ¿¡ 'PC: ½Å°¡ÈñÇÑ¼¼Èñ'¶ó°í ÀûÇôÀÖ´Ù.\n");
+			printf("ì‚¬ì§„ ë’¤ì— 'PC: ì‹ ê°€í¬í•œì„¸í¬'ë¼ê³  ì í˜€ìˆë‹¤.\n");
 			WaitForSeconds(1.5f);
-			printf("È¤½Ã ÀÌ°Ô ÄÄÇ»ÅÍÀÇ ÆĞ½º¿öµåÀÎ°¡?\n\n");
+			printf("í˜¹ì‹œ ì´ê²Œ ì»´í“¨í„°ì˜ íŒ¨ìŠ¤ì›Œë“œì¸ê°€?\n\n");
 			break;
 		case 0:
 			return;
 		default:
-			printf("´Ù½Ã ÀÔ·ÂÇØ ÁÖ¼¼¿ä.\n\n");
+			printf("ë‹¤ì‹œ ì…ë ¥í•´ ì£¼ì„¸ìš”.\n\n");
 			system("pause");
 	}
 }
@@ -305,40 +311,40 @@ void dool() {
 	int dool_choice;
 	
 	system("cls");
-	printf("[ ¿ÀµÎ¸· ] - [ ÀÎÇü ]\n\n");
-	printf("°üÀı ÀÎÇüÀÌ´Ù.\n\n");
+	printf("[ ì˜¤ë‘ë§‰ ] - [ ì¸í˜• ]\n\n");
+	printf("ê´€ì ˆ ì¸í˜•ì´ë‹¤.\n\n");
 	WaitForSeconds(1.5f);
-	printf("1) ÀÎÇüÀÇ ¸Ó¸®¸¦ ºĞ¸®ÇÑ´Ù.\n");
-	printf("2) ÀÎÇüÀÇ ¸öÅëÀ» ºĞ¸®ÇÑ´Ù.\n");
-	printf("3) ÀÎÇüÀÇ ÆÈÀ» ºĞ¸®ÇÑ´Ù.\n");
-	printf("4) ÀÎÇüÀÇ ´Ù¸®¸¦ ºĞ¸®ÇÑ´Ù.\n");
-	printf("0) ´Ù¸¥ °ÍÀ» Á¶»çÇÑ´Ù.\n");
-	printf("ÀÛ¾÷ÇÒ °ÍÀ» ¼±ÅÃÇØÁÖ¼¼¿ä: ");
+	printf("1) ì¸í˜•ì˜ ë¨¸ë¦¬ë¥¼ ë¶„ë¦¬í•œë‹¤.\n");
+	printf("2) ì¸í˜•ì˜ ëª¸í†µì„ ë¶„ë¦¬í•œë‹¤.\n");
+	printf("3) ì¸í˜•ì˜ íŒ”ì„ ë¶„ë¦¬í•œë‹¤.\n");
+	printf("4) ì¸í˜•ì˜ ë‹¤ë¦¬ë¥¼ ë¶„ë¦¬í•œë‹¤.\n");
+	printf("0) ë‹¤ë¥¸ ê²ƒì„ ì¡°ì‚¬í•œë‹¤.\n");
+	printf("ì‘ì—…í•  ê²ƒì„ ì„ íƒí•´ì£¼ì„¸ìš”: ");
 	scanf("%d", &dool_choice);
 	printf("\n");
 	
 	switch(dool_choice) {
 		case 1:
-			printf("[ ÃâÀÔ¹® ºñ¹Ğ¹øÈ£ È¹µæ (1) ]\n\n");
+			printf("[ ì¶œì…ë¬¸ ë¹„ë°€ë²ˆí˜¸ íšë“ (1) ]\n\n");
 			Bare_doolhead=T;
 			break;
 		case 2:
-			printf("[ º¯±â ¿­¼è È¹µæ ]\n\n");
+			printf("[ ë³€ê¸° ì—´ì‡  íšë“ ]\n\n");
 			Find_ToiletKey = T;
 			Bare_doolbody=T;
 			break;
 		case 3:
-			printf("¾Æ¹«°Íµµ ¾ø´Ù.\n\n");
+			printf("ì•„ë¬´ê²ƒë„ ì—†ë‹¤.\n\n");
 			Bare_doolarm = T;
 			break; 
 		case 4:
-			printf("¾Æ¹«°Íµµ ¾ø´Ù.\n\n");
+			printf("ì•„ë¬´ê²ƒë„ ì—†ë‹¤.\n\n");
 			Bare_doolleg= T;
 			break; 
 		case 0:
 			return;
 		default:
-			printf("´Ù½Ã ÀÔ·ÂÇØ ÁÖ¼¼¿ä.\n\n");
+			printf("ë‹¤ì‹œ ì…ë ¥í•´ ì£¼ì„¸ìš”.\n\n");
 			system("pause");
 	}
 }
@@ -346,17 +352,17 @@ void dool() {
 void door() {
 	int door_choice;
 	
-	printf("¹®ÀÌ Àá°ÜÀÖ´Ù.\n");
+	printf("ë¬¸ì´ ì ê²¨ìˆë‹¤.\n");
 	WaitForSeconds(1.5f);
-	printf("¾ÏÈ£¸¦ ÀÔ·ÂÇØ¾ß ÇÑ´Ù.\n");
+	printf("ì•”í˜¸ë¥¼ ì…ë ¥í•´ì•¼ í•œë‹¤.\n");
 	WaitForSeconds(1.5f);
-	printf("Àá±ñ ¸Ş¸ğÁö¿¡ ¹«¾ğ°¡ ÀûÇôÀÖ´Ù.\n\n");
+	printf("ì ê¹ ë©”ëª¨ì§€ì— ë¬´ì–¸ê°€ ì í˜€ìˆë‹¤.\n\n");
 	WaitForSeconds(1.5f);
-	printf("ÀÎÇü ÈÑ¼ÕÀº ÃÖ¼ÒÇÑÀ¸·Î ÇØ¾ß ÇÏ¸ç, ¾ÏÈ£¸¦ Æ²¸®¸é À§ÇèÇØÁü.\n");
+	printf("ì¸í˜• í›¼ì†ì€ ìµœì†Œí•œìœ¼ë¡œ í•´ì•¼ í•˜ë©°, ì•”í˜¸ë¥¼ í‹€ë¦¬ë©´ ìœ„í—˜í•´ì§.\n");
 	WaitForSeconds(1.5f);
-	printf("1) ºñ¹Ğ¹øÈ£¸¦ ÀÔ·ÂÇÑ´Ù.\n");
-	printf("2) ºñ¹Ğ¹øÈ£¸¦ ÀÔ·ÂÇÏÁö ¾Ê´Â´Ù.\n");
-	printf("ÀÛ¾÷ÇÒ °ÍÀ» ¼±ÅÃÇØÁÖ¼¼¿ä: ");
+	printf("1) ë¹„ë°€ë²ˆí˜¸ë¥¼ ì…ë ¥í•œë‹¤.\n");
+	printf("2) ë¹„ë°€ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì§€ ì•ŠëŠ”ë‹¤.\n");
+	printf("ì‘ì—…í•  ê²ƒì„ ì„ íƒí•´ì£¼ì„¸ìš”: ");
 	scanf("%d", &door_choice);
 	printf("\n");
 	
@@ -367,7 +373,7 @@ void door() {
 		case 2:
 			return;
 		default:
-			printf("´Ù½Ã ÀÔ·ÂÇØ ÁÖ¼¼¿ä.\n\n");
+			printf("ë‹¤ì‹œ ì…ë ¥í•´ ì£¼ì„¸ìš”.\n\n");
 			system("pause");
 	}
 }
@@ -377,13 +383,13 @@ void bathroom() {
 	
 	system("cls");
 	if(Find_BathroomKey == 1) {
-		printf("È­Àå½Ç ¹®ÀÌ ¿­·È´Ù.\n\n");
+		printf("í™”ì¥ì‹¤ ë¬¸ì´ ì—´ë ¸ë‹¤.\n\n");
 		WaitForSeconds(1.5f);
-		printf("1) º¯±â\n");
-		printf("2) ¼¼¸é´ë\n");
-		printf("3) ¿åÁ¶\n");
-		printf("4) ¼ö³³Àå\n");
-		printf("Á¶»çÇÒ ¹°°ÇÀ» ¼±ÅÃÇØ ÁÖ¼¼¿ä: ");
+		printf("1) ë³€ê¸°\n");
+		printf("2) ì„¸ë©´ëŒ€\n");
+		printf("3) ìš•ì¡°\n");
+		printf("4) ìˆ˜ë‚©ì¥\n");
+		printf("ì¡°ì‚¬í•  ë¬¼ê±´ì„ ì„ íƒí•´ ì£¼ì„¸ìš”: ");
 		scanf("%d", &bathroom_choice);
 		printf("\n");
 		
@@ -392,7 +398,7 @@ void bathroom() {
 				if(Find_ToiletKey){
 				toilet(); }
 				else
-				printf("ÀÚ¹°¼è°¡ °É·ÁÀÖ´Ù.\n\n");
+				printf("ìë¬¼ì‡ ê°€ ê±¸ë ¤ìˆë‹¤.\n\n");
 				break;
 			case 2:
 				washstand();
@@ -408,8 +414,8 @@ void bathroom() {
 		}
 	}
 	else {
-		printf("ÀÚ¹°¼è°¡ °É·ÁÀÖ´Ù.\n");
-		printf("¿­¼èºÎÅÍ Ã£¾Æ¾ß°Ú´Ù.\n\n");
+		printf("ìë¬¼ì‡ ê°€ ê±¸ë ¤ìˆë‹¤.\n");
+		printf("ì—´ì‡ ë¶€í„° ì°¾ì•„ì•¼ê² ë‹¤.\n\n");
 		return;
 	}
 }
@@ -418,30 +424,30 @@ void toilet() {
 	int toilet_choice;
 	
 	system("cls");
-	printf("[ È­Àå½Ç ] - [ º¯±â ]\n\n");
+	printf("[ í™”ì¥ì‹¤ ] - [ ë³€ê¸° ]\n\n");
 	WaitForSeconds(1.5f);
-	printf("1) È­Àå½ÇÀ» »ç¿ëÇÑ´Ù.\n");
-	printf("2) º¯±â¸¦ »ìÆìº»´Ù.\n");
-	printf("3) º¯±â ¼öÁ¶ ¶Ñ²±À» ¿¬´Ù.\n");
-	printf("0) ´Ù¸¥ °ÍÀ» Á¶»çÇÑ´Ù.\n");
-	printf("ÀÛ¾÷ÇÒ °ÍÀ» ¼±ÅÃÇØ ÁÖ¼¼¿ä: ");
+	printf("1) í™”ì¥ì‹¤ì„ ì‚¬ìš©í•œë‹¤.\n");
+	printf("2) ë³€ê¸°ë¥¼ ì‚´í´ë³¸ë‹¤.\n");
+	printf("3) ë³€ê¸° ìˆ˜ì¡° ëšœê»‘ì„ ì—°ë‹¤.\n");
+	printf("0) ë‹¤ë¥¸ ê²ƒì„ ì¡°ì‚¬í•œë‹¤.\n");
+	printf("ì‘ì—…í•  ê²ƒì„ ì„ íƒí•´ ì£¼ì„¸ìš”: ");
 	scanf("%d", &toilet_choice);
 	printf("\n");
 	
 	switch(toilet_choice) {
 		case 1:
-			printf("¼ÓÀÌ ºñ¾î »óÄèÇÏ´Ù\n\n");
+			printf("ì†ì´ ë¹„ì–´ ìƒì¾Œí•˜ë‹¤\n\n");
 			break;
 		case 2:
-			printf("´õ·´°í ³¿»õ°¡ ³­´Ù.\n\n");
+			printf("ë”ëŸ½ê³  ëƒ„ìƒˆê°€ ë‚œë‹¤.\n\n");
 			break;
 		case 3:
-			printf("[ ÃâÀÔ¹® ºñ¹Ğ¹øÈ£ È¹µæ (2) ]\n\n");
+			printf("[ ì¶œì…ë¬¸ ë¹„ë°€ë²ˆí˜¸ íšë“ (2) ]\n\n");
 			break;
 		case 0:
 			return;
 		default:
-			printf("´Ù½Ã ÀÔ·ÂÇØ ÁÖ¼¼¿ä.\n\n");
+			printf("ë‹¤ì‹œ ì…ë ¥í•´ ì£¼ì„¸ìš”.\n\n");
 			system("pause");
 	}
 }
@@ -450,30 +456,30 @@ void washstand() {
 	int washstand_choice;
 	
 	system("cls");
-	printf("[ È­Àå½Ç ] - [ ¼¼¸é´ë ]\n\n");
-	printf("¼¼¸é´ë¿¡ ¸Ó¸®Ä«¶ôÀÌ ÀÖ¾î ¹°ÀÌ ¾È ³»·Á°£´Ù.\n\n");
+	printf("[ í™”ì¥ì‹¤ ] - [ ì„¸ë©´ëŒ€ ]\n\n");
+	printf("ì„¸ë©´ëŒ€ì— ë¨¸ë¦¬ì¹´ë½ì´ ìˆì–´ ë¬¼ì´ ì•ˆ ë‚´ë ¤ê°„ë‹¤.\n\n");
 	WaitForSeconds(1.5f);
-	printf("1) ¸Ó¸®Ä«¶ôÀ» Á¦°ÅÇÑ´Ù.\n");
-	printf("2) ¹è¼ö°üÀ» Á¶»çÇÑ´Ù.\n");
-	printf("0) ´Ù¸¥ °ÍÀ» Á¶»çÇÑ´Ù.\n");
-	printf("ÀÛ¾÷ÇÒ °ÍÀ» ¼±ÅÃÇØ ÁÖ¼¼¿ä: ");
+	printf("1) ë¨¸ë¦¬ì¹´ë½ì„ ì œê±°í•œë‹¤.\n");
+	printf("2) ë°°ìˆ˜ê´€ì„ ì¡°ì‚¬í•œë‹¤.\n");
+	printf("0) ë‹¤ë¥¸ ê²ƒì„ ì¡°ì‚¬í•œë‹¤.\n");
+	printf("ì‘ì—…í•  ê²ƒì„ ì„ íƒí•´ ì£¼ì„¸ìš”: ");
 	scanf("%d", &washstand_choice);
 	printf("\n");
 	
 	switch(washstand_choice) {
 		case 1:
-			printf("±×·¯³ª ¿©ÀüÈ÷ ¹°ÀÌ ¾È ³»·Á°£´Ù. ¹è¼ö°ü¿¡ ¹¹°¡ ÀÖ³ª?\n\n");
+			printf("ê·¸ëŸ¬ë‚˜ ì—¬ì „íˆ ë¬¼ì´ ì•ˆ ë‚´ë ¤ê°„ë‹¤. ë°°ìˆ˜ê´€ì— ë­ê°€ ìˆë‚˜?\n\n");
 			WaitForSeconds(1.5f);
 			break;
 		case 2:
-			printf("[ Âõ¾îÁø ¸Ş¸ğÁö ¹ß°ß ]\n");
+			printf("[ ì°¢ì–´ì§„ ë©”ëª¨ì§€ ë°œê²¬ ]\n");
 			WaitForSeconds(1.5f);
-			printf("¸Ş¸ğÁö¿¡ 'D-day 37'ÀÌ¶ó°í ÀûÇôÀÖ´Ù.\n\n");
+			printf("ë©”ëª¨ì§€ì— 'D-day 37'ì´ë¼ê³  ì í˜€ìˆë‹¤.\n\n");
 			break;
 		case 0:
 			return;
 		default:
-			printf("´Ù½Ã ÀÔ·ÂÇØ ÁÖ¼¼¿ä.\n\n");
+			printf("ë‹¤ì‹œ ì…ë ¥í•´ ì£¼ì„¸ìš”.\n\n");
 			system("pause");
 	}
 }
@@ -482,26 +488,26 @@ void bathtub() {
 	int bathtub_choice;
 	
 	system("cls");
-	printf("[ È­Àå½Ç ] - [ ¿åÁ¶ ]\n\n");
-	printf("¹°ÀÌ °¡µæ Â÷ÀÖ´Ù. ¹°ÀÌ Â÷°¡¿î °É º¸´Ï Àå½Ã°£ ³ëÃâµÈ ¹°ÀÎ °Í °°´Ù.\n\n");
+	printf("[ í™”ì¥ì‹¤ ] - [ ìš•ì¡° ]\n\n");
+	printf("ë¬¼ì´ ê°€ë“ ì°¨ìˆë‹¤. ë¬¼ì´ ì°¨ê°€ìš´ ê±¸ ë³´ë‹ˆ ì¥ì‹œê°„ ë…¸ì¶œëœ ë¬¼ì¸ ê²ƒ ê°™ë‹¤.\n\n");
 	WaitForSeconds(1.5f);
-	printf("1) ¿åÁ¶ÀÇ ¹°À» ¸ğµÎ »«´Ù.\n");
-	printf("0) ´Ù¸¥ °ÍÀ» Á¶»çÇÑ´Ù.\n");
-	printf("ÀÛ¾÷ÇÒ °ÍÀ» ¼±ÅÃÇØ ÁÖ¼¼¿ä: ");
+	printf("1) ìš•ì¡°ì˜ ë¬¼ì„ ëª¨ë‘ ëº€ë‹¤.\n");
+	printf("0) ë‹¤ë¥¸ ê²ƒì„ ì¡°ì‚¬í•œë‹¤.\n");
+	printf("ì‘ì—…í•  ê²ƒì„ ì„ íƒí•´ ì£¼ì„¸ìš”: ");
 	scanf("%d", &bathtub_choice);
 	printf("\n");
 
 	switch(bathtub_choice) {
 		case 1:
-			printf("¹Ù´Ú¿¡ Á¾ÀÌÀÌ°¡ °¡¶ó¾É¾Æ ÀÖ´Ù.\n");
+			printf("ë°”ë‹¥ì— ì¢…ì´ì´ê°€ ê°€ë¼ì•‰ì•„ ìˆë‹¤.\n");
 			WaitForSeconds(1.5f);
-			printf("±Û¾¾°¡ ¹°¿¡ ¹øÁ® ¾Ë¾Æº¼ ¼ö°¡ ¾ø´Ù.\n");
-			printf("¹«½ÃÇØ¾ß°Ú±º..\n\n");
+			printf("ê¸€ì”¨ê°€ ë¬¼ì— ë²ˆì ¸ ì•Œì•„ë³¼ ìˆ˜ê°€ ì—†ë‹¤.\n");
+			printf("ë¬´ì‹œí•´ì•¼ê² êµ°..\n\n");
 			break;
 		case 0:
 			return;
 		default:
-			printf("´Ù½Ã ÀÔ·ÂÇØ ÁÖ¼¼¿ä.\n\n");
+			printf("ë‹¤ì‹œ ì…ë ¥í•´ ì£¼ì„¸ìš”.\n\n");
 			system("pause");
 	}
 }
@@ -510,31 +516,31 @@ void cabinet() {
 	int cabinet_choice;
 	
 	system("cls");
-	printf("[ È­Àå½Ç ] - [ ¼ö³³ÇÔ ]\n\n");
-	printf("¿·À¸·Î ¹Ì´Â ¼ö³³ÇÔÀÌ´Ù.\n\n");
+	printf("[ í™”ì¥ì‹¤ ] - [ ìˆ˜ë‚©í•¨ ]\n\n");
+	printf("ì˜†ìœ¼ë¡œ ë¯¸ëŠ” ìˆ˜ë‚©í•¨ì´ë‹¤.\n\n");
 	WaitForSeconds(1.5f);
-	printf("1) ¿À¸¥ÂÊÀ» Á¶»çÇÑ´Ù.\n");
-	printf("2) ¿ŞÂÊÀ» Á¶»çÇÑ´Ù.\n");
-	printf("0) ´Ù¸¥ °ÍÀ» Á¶»çÇÑ´Ù.\n");
-	printf("ÀÛ¾÷ÇÒ °ÍÀ» ¼±ÅÃÇØ ÁÖ¼¼¿ä: ");
+	printf("1) ì˜¤ë¥¸ìª½ì„ ì¡°ì‚¬í•œë‹¤.\n");
+	printf("2) ì™¼ìª½ì„ ì¡°ì‚¬í•œë‹¤.\n");
+	printf("0) ë‹¤ë¥¸ ê²ƒì„ ì¡°ì‚¬í•œë‹¤.\n");
+	printf("ì‘ì—…í•  ê²ƒì„ ì„ íƒí•´ ì£¼ì„¸ìš”: ");
 	scanf("%d", &cabinet_choice);
 	printf("\n");
 	
 	switch(cabinet_choice) {
 		case 1:
-			printf("¼ö°ÇÀÌ °¡µæ Â÷ÀÖ´Ù.\n");
+			printf("ìˆ˜ê±´ì´ ê°€ë“ ì°¨ìˆë‹¤.\n");
 			WaitForSeconds(1.5f);
-			printf("»ç¿ëÇÒ °÷ÀÌ ¾ø¾î º¸ÀÎ´Ù.\n\n");
+			printf("ì‚¬ìš©í•  ê³³ì´ ì—†ì–´ ë³´ì¸ë‹¤.\n\n");
 			break;
 		case 2:
-			printf("ºú°ú ºñ´©, ¸éµµ±â °°Àº ÀÛµ¿»ç´Ï°¡ ¸¹ÀÌ ÀÖ´Ù.\n");
+			printf("ë¹šê³¼ ë¹„ëˆ„, ë©´ë„ê¸° ê°™ì€ ì‘ë™ì‚¬ë‹ˆê°€ ë§ì´ ìˆë‹¤.\n");
 			WaitForSeconds(1.5f);
-			printf("»ç¿ëÇÒ °÷ÀÌ ¾ø¾î º¸ÀÎ´Ù.\n\n");
+			printf("ì‚¬ìš©í•  ê³³ì´ ì—†ì–´ ë³´ì¸ë‹¤.\n\n");
 			break;
 		case 0:
 			return;
 		default:
-			printf("´Ù½Ã ÀÔ·ÂÇØ ÁÖ¼¼¿ä.\n\n");
+			printf("ë‹¤ì‹œ ì…ë ¥í•´ ì£¼ì„¸ìš”.\n\n");
 			system("pause");
 	}
 }
@@ -542,50 +548,49 @@ void cabinet() {
 void computer_PW() {
 	char PW[7]="SGHHSH", PWinput[7];
 	
-	printf("ÆĞ½º¿öµå¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+	printf("íŒ¨ìŠ¤ì›Œë“œë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
 	scanf("%s", &PWinput);
 	printf("\n"); 
 	
 	if(!strcmp(PW,PWinput)) {
-		printf("'²Î'ÀÌ¶ó´Â ±Û¾¾°¡ ³ª¿Ô´Ù. Çê°í»ıÀ» Çß±º..\n\n");
+		printf("'ê½'ì´ë¼ëŠ” ê¸€ì”¨ê°€ ë‚˜ì™”ë‹¤. í—›ê³ ìƒì„ í–ˆêµ°..\n\n");
 	}
 	else
-		printf("ÆĞ½º¿öµå°¡ Æ²·È½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØ ÁÖ¼¼¿ä.\n");
+		printf("íŒ¨ìŠ¤ì›Œë“œê°€ í‹€ë ¸ìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•´ ì£¼ì„¸ìš”.\n");
 		return;	
 }
 
 void door_PW() {
 	char  PW[5] = "1201", PWinput[5];
  	
-	printf("ÆĞ½º¿öµå¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+	printf("íŒ¨ìŠ¤ì›Œë“œë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
 	scanf("%s", &PWinput);
 	printf("\n"); 
 	
 	if(!strcmp(PW, PWinput)) {
 		if(pw_count >= 4) {
-			printf("±âÈ¸¼Ò½Ç·Î Å»Ãâ ºÒ°¡\n");
-			printf("[ °ÔÀÓ ¿À¹ö ]\n");
+			printf("ê¸°íšŒì†Œì‹¤ë¡œ íƒˆì¶œ ë¶ˆê°€\n");
+			printf("[ ê²Œì„ ì˜¤ë²„ ]\n");
 			exit(0);
 		} 
 		else if(pw_count >= 1) {
-			printf("¹® ¾Õ¿¡ ³³Ä¡¹üÀÌ ¿ôÀ¸¸ç ¼­ÀÖ´Ù.\n");
-			printf("[ °ÔÀÓ ¿À¹ö ]\n");
+			printf("ë¬¸ ì•ì— ë‚©ì¹˜ë²”ì´ ì›ƒìœ¼ë©° ì„œìˆë‹¤.\n");
+			printf("[ ê²Œì„ ì˜¤ë²„ ]\n");
 			exit(0); 
 		}
 		else if(Bare_doolarm && Bare_doolleg && Bare_doolbody && Bare_doolhead) {
-			printf("ÀÎÇüÀÇ º¹¼ö°¡ ½Ã ÀÛ µÈ ´Ù.\n");
-			printf("[ °ÔÀÓ ¿À¹ö ]\n");
+			printf("ì¸í˜•ì˜ ë³µìˆ˜ê°€ ì‹œ ì‘ ëœ ë‹¤.\n");
+			printf("[ ê²Œì„ ì˜¤ë²„ ]\n");
 			exit(0);
 		}
 		else {
-			printf("[ Å»Ãâ ¼º°ø ]\n");
+			printf("[ íƒˆì¶œ ì„±ê³µ ]\n");
 			exit(0);
 		}
 	}
 	else {
-		printf("ºñ¹Ğ¹øÈ£¸¦ Æ²·È´Ù.\n\\n");
+		printf("ë¹„ë°€ë²ˆí˜¸ë¥¼ í‹€ë ¸ë‹¤.\n\\n");
 		pw_count++;
 	}
 	return;
 }
-
